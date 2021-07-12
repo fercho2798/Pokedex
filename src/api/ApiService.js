@@ -32,28 +32,10 @@ const get = (url, request, headers) => {
   return httpRequest("get", `${url}${queryString}`, request, headers);
 };
 
-const deleteRequest = (url, request, headers) => {
-  return httpRequest("delete", url, request, headers);
-};
-
-const post = (url, request, headers) => {
-  return httpRequest("post", url, request, headers);
-};
-
-const put = (url, request, headers) => {
-  return httpRequest("put", url, request, headers);
-};
-
-const patch = (url, request, headers) => {
-  return httpRequest("patch", url, request, headers);
-};
 
 const Api = {
   get,
-  delete: deleteRequest,
-  post,
-  put,
-  patch,
+
 };
 
 export default Api;
